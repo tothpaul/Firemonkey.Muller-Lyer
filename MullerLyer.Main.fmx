@@ -1,0 +1,161 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Muller-Lyer Illusion - (c)2022 Paul TOTH '
+  ClientHeight = 647
+  ClientWidth = 644
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 644.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 40.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Dynamic Muller-Lyer Ilusion'
+    TabOrder = 0
+  end
+  object VertScrollBox1: TVertScrollBox
+    Align = Client
+    Size.Width = 644.000000000000000000
+    Size.Height = 566.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 628.000000000000000000
+    Viewport.Height = 566.000000000000000000
+    object Layout1: TLayout
+      Position.X = 50.000000000000000000
+      Position.Y = 175.000000000000000000
+      Size.Width = 500.000000000000000000
+      Size.Height = 500.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+    object Line1: TLine
+      LineType = Top
+      Position.X = 100.000000000000000000
+      Position.Y = 100.000000000000000000
+      RotationAngle = -135.000000000000000000
+      RotationCenter.X = 0.000000000000000000
+      RotationCenter.Y = 0.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 5.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 5.000000000000000000
+      object FloatAnimation1: TFloatAnimation
+        AutoReverse = True
+        Enabled = True
+        Duration = 3.000000000000000000
+        Loop = True
+        OnProcess = FloatAnimation1Process
+        PropertyName = 'RotationAngle'
+        StartValue = -135.000000000000000000
+        StartFromCurrent = True
+        StopValue = -45.000000000000000000
+      end
+    end
+    object Line2: TLine
+      LineType = Top
+      Position.X = 100.000000000000000000
+      Position.Y = 100.000000000000000000
+      RotationAngle = 135.000000000000000000
+      RotationCenter.X = 0.000000000000000000
+      RotationCenter.Y = 0.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 5.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 5.000000000000000000
+    end
+    object Line3: TLine
+      LineType = Top
+      Position.X = 300.000000000000000000
+      Position.Y = 100.000000000000000000
+      RotationAngle = -45.000000000000000000
+      RotationCenter.X = 0.000000000000000000
+      RotationCenter.Y = 0.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 5.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 5.000000000000000000
+    end
+    object Line4: TLine
+      LineType = Top
+      Position.X = 300.000000000000000000
+      Position.Y = 100.000000000000000000
+      RotationAngle = 45.000000000000000000
+      RotationCenter.X = 0.000000000000000000
+      RotationCenter.Y = 0.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 5.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 5.000000000000000000
+    end
+    object Line5: TLine
+      LineType = Top
+      Position.X = 500.000000000000000000
+      Position.Y = 100.000000000000000000
+      RotationAngle = -135.000000000000000000
+      RotationCenter.X = 0.000000000000000000
+      RotationCenter.Y = 0.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 5.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 5.000000000000000000
+    end
+    object Line6: TLine
+      LineType = Top
+      Position.X = 500.000000000000000000
+      Position.Y = 100.000000000000000000
+      RotationAngle = 135.000000000000000000
+      RotationCenter.X = 0.000000000000000000
+      RotationCenter.Y = 0.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 5.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 5.000000000000000000
+    end
+    object LineA: TLine
+      LineType = Top
+      Position.X = 100.000000000000000000
+      Position.Y = 100.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 5.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 5.000000000000000000
+    end
+    object LineB: TLine
+      LineType = Top
+      Position.X = 300.000000000000000000
+      Position.Y = 100.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 5.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 5.000000000000000000
+    end
+    object Layout2: TLayout
+      Position.X = 50.000000000000000000
+      Position.Y = 698.000000000000000000
+      Size.Width = 500.000000000000000000
+      Size.Height = 500.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+  end
+  object Label2: TLabel
+    Align = Top
+    HitTest = True
+    Position.Y = 57.000000000000000000
+    Size.Width = 644.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'https://www.giannisarcone.com/Muller_lyer_illusion.html'
+    TabOrder = 2
+    OnClick = Label2Click
+  end
+end
